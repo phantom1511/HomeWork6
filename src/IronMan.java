@@ -1,4 +1,4 @@
-public class IronMan extends Player {
+public class IronMan extends Player implements SuperPowerAvailable{
     int superpower;
 
     public int getSuperpower() {
@@ -7,5 +7,10 @@ public class IronMan extends Player {
 
     public void setSuperpower(int superpower) {
         this.superpower = superpower;
+    }
+
+    @Override
+    public int superPower() {
+        return 1;
     }
 }

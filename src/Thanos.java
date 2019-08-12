@@ -1,4 +1,4 @@
-public class Thanos extends Player {
+public class Thanos extends Player implements SuperPowerAvailable{
     int defence;
 
     public int getDefence() {
@@ -7,5 +7,10 @@ public class Thanos extends Player {
 
     public void setDefence(int defence) {
         this.defence = defence;
+    }
+
+    @Override
+    public int superPower() {
+        return 1;
     }
 }

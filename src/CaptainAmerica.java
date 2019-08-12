@@ -1,4 +1,4 @@
-public class CaptainAmerica extends Player {
+public class CaptainAmerica extends Player implements SuperPowerAvailable{
     int superpower;
 
 
@@ -8,5 +8,10 @@ public class CaptainAmerica extends Player {
 
     public void setSuperpower(int superpower) {
         this.superpower = superpower;
+    }
+
+    @Override
+    public int superPower() {
+        return 2;
     }
 }

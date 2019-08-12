@@ -1,4 +1,4 @@
-public class Hulk extends Player {
+public class Hulk extends Player implements SuperPowerAvailable{
     int superpower;
 
     public int getSuperpower() {
@@ -7,5 +7,10 @@ public class Hulk extends Player {
 
     public void setSuperpower(int superpower) {
         this.superpower = superpower;
+    }
+
+    @Override
+    public int superPower() {
+        return 2;
     }
 }
